@@ -387,6 +387,8 @@ footer {
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
+    z-index: 1001; 
+    cursor: pointer;
   }
 
   .navbar {
