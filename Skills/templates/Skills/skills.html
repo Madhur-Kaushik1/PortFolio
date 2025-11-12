@@ -70,6 +70,22 @@
 
     <div>
         <div>
+            <h1 class='heading'><b>Deployment</b></h1>
+            <div class='data'>
+                <figure class='skill_fig'>
+                {% for i in deploy_var %}
+                <img src="{{i.image.url}}" alt="" class='image'>
+                <span class='img_name'>{{i.deploy}}</span>
+                </figure>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div>
+        <div>
             <h1 class='heading'><b>Logical</b></h1>
             <div class='data'>
                 <figure class='skill_fig'>

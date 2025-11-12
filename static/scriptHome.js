@@ -5,5 +5,3 @@ btn.onclick = () => {
   btn.classList.toggle('fa-circle-xmark');
   navi.classList.toggle('active');
 };
-
-console.log("✅ JS loaded at");

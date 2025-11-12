@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import database, frontend_skills, dsa, lang, framework
+from .models import database, frontend_skills, dsa, lang, framework, deploy
 
 def skills_fun(request):
     database_var = database.objects.all()
@@ -7,12 +7,14 @@ def skills_fun(request):
     dsa_var = dsa.objects.all()
     lang_var = lang.objects.all()
     frame_var = framework.objects.all()
+    deploy_var = deploy.objects.all()
 
     skills_dict = {
         'database_var': database_var,
         'frontend_var': frontend_var,
         'dsa_var': dsa_var,
         'lang_var': lang_var,
-        'frame_var': frame_var
+        'frame_var': frame_var,
+        'deploy_var': deploy_var
     }
     return render(request, 'Skills/skills.html', skills_dict)

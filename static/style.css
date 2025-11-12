@@ -64,10 +64,6 @@ body {
   cursor: pointer;
 }
 
-#menu-icon:hover{
-  background: var(--main-color);
-}
-
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
@@ -530,6 +526,7 @@ footer {
   .main_body{
     width: 100vw;
     height: 100vh;
+    margin-left: .5rem;
     display: flex;
     flex-direction: column;
     margin-top: 2.9rem;
